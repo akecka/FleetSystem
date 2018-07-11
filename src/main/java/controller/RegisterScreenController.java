@@ -3,6 +3,7 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import utils.validation.EmailValidator;
 import utils.validation.PasswordValidator;
 import utils.validation.ValidationResult;
 
@@ -15,6 +16,8 @@ public class RegisterScreenController {
     }
 
     private static final String EMPTY_INPUT = "Pole musi zostac wypelnione";
+
+    private static final String INVALID = "Haslo jest nieprawidlowe";
 
     @FXML
     private TextField loginInput;
@@ -56,6 +59,8 @@ public class RegisterScreenController {
 
         if (validate()) {
             System.out.println("tekst");
+
+            //przejdz do LoginScreen
         }
 
     }
@@ -65,6 +70,17 @@ public class RegisterScreenController {
     }
 
     public boolean validate() {
+        errorLogin.setText("");
+
+        errorName.setText("");
+
+        errorSurname.setText("");
+
+        errorPassword.setText("");
+
+        errorRepeatPassword.setText("");
+
+        errorEmail.setText("");
 
         boolean result = true;
 
@@ -105,7 +121,7 @@ public class RegisterScreenController {
             }
 
             if (!repeatPasswordInput.getText().equals(passwordInput.getText())){
-                errorRepeatPassword.setText("Haslo jest nieprawidlowe");
+                errorRepeatPassword.setText(INVALID);
                 result = false;
             }
         }
@@ -113,6 +129,12 @@ public class RegisterScreenController {
         if (emailInput.getText().isEmpty()) {
             errorEmail.setText(EMPTY_INPUT);
             result = false;
+        } else {
+            ValidationResult validationEmResult = EmailValidator.validateEmail(emailInput.getText());
+            if (!validationEmResult.isValid()) {
+                errorEmail.setText(validationEmResult.getMessage());
+                result = false;
+            }
         }
 
         return result;

@@ -8,102 +8,102 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterScreenController">
    <children>
-      <Label layoutX="237.0" layoutY="65.0" text="Login">
+      <Label layoutX="225.0" layoutY="85.0" prefHeight="40.0" text="Login">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="loginInput" layoutX="419.0" layoutY="63.0">
+      <TextField fx:id="loginInput" layoutX="420.0" layoutY="85.0" prefHeight="40.0" prefWidth="270.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Label fx:id="errorLogin" alignment="CENTER" layoutX="624.0" layoutY="67.0" prefHeight="35.0" prefWidth="351.0" text="Label" textFill="#f20404">
+      <Label fx:id="errorLogin" alignment="CENTER" layoutX="705.0" layoutY="85.0" prefHeight="40.0" prefWidth="300.0" textFill="#f20404">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="243.0" layoutY="154.0" text="Imię">
+      <Label layoutX="225.0" layoutY="160.0" prefHeight="40.0" text="Imię">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="243.0" layoutY="237.0" text="Nazwisko">
+      <Label layoutX="225.0" layoutY="235.0" prefHeight="40.0" text="Nazwisko">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="253.0" layoutY="313.0" text="Hasło">
+      <Label layoutX="225.0" layoutY="310.0" prefHeight="40.0" text="Hasło">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="194.0" layoutY="394.0" text="Powtórzenie hasła ">
+      <Label layoutX="225.0" layoutY="385.0" prefHeight="40.0" text="Powtórzenie hasła ">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="253.0" layoutY="476.0" text="Email">
+      <Label layoutX="225.0" layoutY="460.0" prefHeight="40.0" text="Email">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="nameInput" layoutX="419.0" layoutY="161.0">
+      <TextField fx:id="nameInput" layoutX="420.0" layoutY="160.0" prefHeight="40.0" prefWidth="270.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="surnameInput" layoutX="419.0" layoutY="235.0">
+      <TextField fx:id="surnameInput" layoutX="420.0" layoutY="235.0" prefHeight="40.0" prefWidth="270.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="passwordInput" layoutX="419.0" layoutY="322.0">
+      <TextField fx:id="passwordInput" layoutX="420.0" layoutY="310.0" prefHeight="40.0" prefWidth="270.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="repeatPasswordInput" layoutX="419.0" layoutY="392.0">
+      <TextField fx:id="repeatPasswordInput" layoutX="420.0" layoutY="385.0" prefHeight="40.0" prefWidth="270.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="emailInput" layoutX="419.0" layoutY="476.0">
+      <TextField fx:id="emailInput" layoutX="420.0" layoutY="460.0" prefHeight="40.0" prefWidth="270.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Label fx:id="errorName" alignment="CENTER" layoutX="624.0" layoutY="163.0" prefHeight="35.0" prefWidth="351.0" text="Label" textFill="#f20404">
+      <Label fx:id="errorName" alignment="CENTER" layoutX="705.0" layoutY="160.0" prefHeight="40.0" prefWidth="300.0" textFill="#f20404">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="errorSurname" alignment="CENTER" layoutX="633.0" layoutY="237.0" prefHeight="35.0" prefWidth="351.0" text="Label" textFill="#f20404">
+      <Label fx:id="errorSurname" alignment="CENTER" layoutX="705.0" layoutY="235.0" prefHeight="40.0" prefWidth="300.0" textFill="#f20404">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="errorPassword" alignment="CENTER" layoutX="633.0" layoutY="324.0" prefHeight="35.0" prefWidth="351.0" text="Label" textFill="#f20404">
+      <Label fx:id="errorPassword" alignment="CENTER" layoutX="705.0" layoutY="310.0" prefHeight="40.0" prefWidth="300.0" textFill="#f20404">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="errorRepeatPassword" alignment="CENTER" layoutX="633.0" layoutY="394.0" prefHeight="35.0" prefWidth="351.0" text="Label" textFill="#f20404">
+      <Label fx:id="errorRepeatPassword" alignment="CENTER" layoutX="705.0" layoutY="385.0" prefHeight="40.0" prefWidth="300.0" textFill="#f20404">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="errorEmail" alignment="CENTER" layoutX="633.0" layoutY="478.0" prefHeight="35.0" prefWidth="351.0" text="Label" textFill="#f20404">
+      <Label fx:id="errorEmail" alignment="CENTER" layoutX="705.0" layoutY="460.0" prefHeight="40.0" prefWidth="300.0" textFill="#f20404">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="284.0" layoutY="640.0" mnemonicParsing="false" onAction="#register" text="Zarejestruj">
+      <Button layoutX="208.0" layoutY="640.0" mnemonicParsing="false" onAction="#register" text="Zarejestruj">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="734.0" layoutY="640.0" mnemonicParsing="false" onAction="#back" text="Powrót">
+      <Button layoutX="746.0" layoutY="640.0" mnemonicParsing="false" onAction="#back" text="Powrót">
          <font>
             <Font size="24.0" />
          </font>

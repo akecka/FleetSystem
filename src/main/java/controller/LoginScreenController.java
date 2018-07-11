@@ -34,6 +34,9 @@ public class LoginScreenController {
 
             System.out.println(loginInput.getText());
             System.out.println(passwordInput.getText());
+
+            //przejdz do pierwszej strony po zalogowaniu
+            //WelcomeScreen
         }
 
     }

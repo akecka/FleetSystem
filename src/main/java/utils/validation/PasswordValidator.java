@@ -5,7 +5,7 @@ public class PasswordValidator {
     private static final String TOO_SHORT = "Haslo jest zbyt krotkie";
     private static final String TOO_LONG = "Haslo jest zbyt dlugie";
 
-    public static ValidationResult validatePassword(String password) {
+    public static ValidationResult validatePassword(final String password) {
 
         boolean isValid = true;
         String message = "";
