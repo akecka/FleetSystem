@@ -58,7 +58,6 @@ public class LoginScreenController {
     }
 
     public void exit() {
-
         Platform.exit();
     }
 
@@ -74,7 +73,6 @@ public class LoginScreenController {
         if (passwordInput.getText().isEmpty()) {
             errorLabel.setText("Pole hasla jest puste");
             return false;
-
         }
         return true;
     }

@@ -16,8 +16,7 @@ public class RegisterScreenController {
     }
 
     private static final String EMPTY_INPUT = "Pole musi zostac wypelnione";
-
-    private static final String INVALID = "Haslo jest nieprawidlowe";
+    private static final String INVALID = "Hasla musza byc jednakowe";
 
     @FXML
     private TextField loginInput;
@@ -70,16 +69,12 @@ public class RegisterScreenController {
     }
 
     public boolean validate() {
+
         errorLogin.setText("");
-
         errorName.setText("");
-
         errorSurname.setText("");
-
         errorPassword.setText("");
-
         errorRepeatPassword.setText("");
-
         errorEmail.setText("");
 
         boolean result = true;
@@ -130,9 +125,9 @@ public class RegisterScreenController {
             errorEmail.setText(EMPTY_INPUT);
             result = false;
         } else {
-            ValidationResult validationEmResult = EmailValidator.validateEmail(emailInput.getText());
-            if (!validationEmResult.isValid()) {
-                errorEmail.setText(validationEmResult.getMessage());
+            ValidationResult validationEmailResult = EmailValidator.validateEmail(emailInput.getText());
+            if (!validationEmailResult.isValid()) {
+                errorEmail.setText(validationEmailResult.getMessage());
                 result = false;
             }
         }
